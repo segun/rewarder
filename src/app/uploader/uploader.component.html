@@ -1,0 +1,4 @@
+<input type="button" id="loadFileXml" value="Select User CSV File..." onclick="document.getElementById('file').click()" />
+<input accept=".csv" type="file" style="display:none;" id="file" name="file" (change)='openFile($event)'/>
+<br />
+<app-view-rewards [(userSpendings)]="userSpendings" [(userRewards)]="userRewards"></app-view-rewards>

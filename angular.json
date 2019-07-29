@@ -136,5 +136,10 @@
       }
     }
   },
-  "defaultProject": "rewarder"
+  "defaultProject": "rewarder",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "css"
+    }
+  }
 }

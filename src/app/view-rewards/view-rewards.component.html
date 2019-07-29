@@ -1,0 +1,60 @@
+<h2>Users Loaded From CSV File</h2>
+<div class="table-wrapper">
+  <table class="fl-table">
+    <thead>
+      <tr>
+        <td>ID</td>
+        <td>FullName</td>
+        <td>Amount Spent</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let userSpending of userSpendings">
+        <td>
+          {{userSpending.id}}
+        </td>
+        <td>
+          {{userSpending.firstName}}
+        </td>
+        <td>
+          {{userSpending.spent}}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+<h2>Calculated Rewards By User</h2>
+<div class="table-wrapper">
+  <table class="fl-table">
+    <thead>
+      <tr>
+        <td>User ID</td>
+        <td>FullName</td>
+        <td>Reward Amount</td>
+        <td>Validity (days)</td>
+        <td>Voucher</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let userReward of userRewards">
+        <td *ngIf="userReward.amount > 0">
+          {{userReward.userId}}
+        </td>
+        <td *ngIf="userReward.amount > 0">
+          {{userReward.firstName}}
+        </td>
+        <td *ngIf="userReward.amount > 0">
+          {{userReward.amount}}
+        </td>
+        <td *ngIf="userReward.amount > 0">
+          {{userReward.validity}}
+        </td>
+        <td *ngIf="userReward.amount > 0">
+          <button (click)="downloadVoucher(userReward)">Download Voucher</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
