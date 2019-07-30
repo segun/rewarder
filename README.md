@@ -2,13 +2,18 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.5.
 
-## Development server
-
-Run `npm install` and then run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Run `npm install` to download the dependencies and build the app
+
+## Development server
+
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.
+
+## Running
+
+A sample csv file `sample-input.csv` is in the `assets` folder. 
+
 
 ## Environment
 ### Angular CLI: 7.3.9
